@@ -53,6 +53,7 @@ public class Startup
         services.Configure<JobsSettings>(Configuration.GetSection("Jobs"));
         services.Configure<SimulateSettings>(Configuration.GetSection("Simulate"));
         services.Configure<CustomResponseSettings>(Configuration.GetSection("CustomResponse"));
+        services.Configure<Config>(Configuration.GetSection("Config"));
 
         services.AddCors(options =>
         {
